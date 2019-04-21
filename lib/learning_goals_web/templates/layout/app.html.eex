@@ -5,35 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>LearningGoals · Phoenix Framework</title>
-    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.scss") %>"/>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-xl" style="background-color: red">
-           <a class="navbar-brand" href="#">AWD</a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+      <a class="navbar-brand" href="#">AWD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             <ul class="navbar-nav mr-auto">
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Papers
-                 </a>
-                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="#">Initial Encounter</a>
-                   <a class="dropdown-item" href="#">Researched Argument</a>
-                   <a class="dropdown-item" href="#">Public Audience</a>
-                   <a class="dropdown-item" href="#">Professional Audience</a>
-                 </div>
-               </li>
-             </ul>
-    <main role="main" class="container">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-      <%= render @view_module, @view_template, assigns %>
-    </main>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Papers
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Initial Encounter</a>
+              <a class="dropdown-item" href="#">Researched Argument</a>
+              <a class="dropdown-item" href="#">Public Audience</a>
+              <a class="dropdown-item" href="#">Professional Audience</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
