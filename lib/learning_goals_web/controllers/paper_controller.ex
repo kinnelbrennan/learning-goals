@@ -1,5 +1,5 @@
-def module LearningGoalsWeb.PaperController do
-  use PaperWeb :PaperController
+defmodule LearningGoalsWeb.PaperController do
+  use LearningGoalsWeb, :controller
 
   def index(conn, _params) do
     render(conn, "index.html")

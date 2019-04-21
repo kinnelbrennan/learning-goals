@@ -8,8 +8,27 @@
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.scss") %>"/>
   </head>
   <body>
-    <header>
-    </header>
+    <div class="container">
+      <nav class="navbar navbar-expand-xl" style="background-color: red">
+           <a class="navbar-brand" href="#">AWD</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav mr-auto">
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Papers
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#">Initial Encounter</a>
+                   <a class="dropdown-item" href="#">Researched Argument</a>
+                   <a class="dropdown-item" href="#">Public Audience</a>
+                   <a class="dropdown-item" href="#">Professional Audience</a>
+                 </div>
+               </li>
+             </ul>
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
