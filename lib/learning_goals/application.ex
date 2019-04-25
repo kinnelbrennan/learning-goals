@@ -9,7 +9,7 @@ defmodule LearningGoals.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      LearningGoals.Repo,
+      # LearningGoals.Repo,
       # Start the endpoint when the application starts
       LearningGoalsWeb.Endpoint
       # Starts a worker by calling: LearningGoals.Worker.start_link(arg)
