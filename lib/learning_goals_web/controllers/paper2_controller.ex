@@ -1,4 +1,4 @@
-defmodule LearningGoalsWeb.Paper4Controller do
+defmodule LearningGoalsWeb.Paper2Controller do
   use LearningGoalsWeb, :controller
 
   def index(conn, _params) do
