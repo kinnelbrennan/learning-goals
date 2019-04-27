@@ -19,6 +19,9 @@ defmodule LearningGoalsWeb.Router do
     get "/", PageController, :index
 
     get "/papers", PaperController, :index
+    get "/papers2", Paper2Controller, :index
+    get "/papers3", Paper3Controller, :index
+    get "/papers4", Paper4Controller, :index
   end
 
   # Other scopes may use custom stacks.
