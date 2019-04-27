@@ -7,9 +7,6 @@
 # General application configuration
 use Mix.Config
 
-config :learning_goals,
-  ecto_repos: [LearningGoals.Repo]
-
 # Configures the endpoint
 config :learning_goals, LearningGoalsWeb.Endpoint,
   url: [host: "localhost"],

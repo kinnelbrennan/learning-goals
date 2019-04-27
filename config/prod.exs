@@ -72,4 +72,12 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs which should be versioned
 # separately.
-import_config "prod.secret.exs"
+path = Path.expand("~/.config/learning.secret")
+unless File.exists?(path) do
+  secret = Base.encode16(:crypto.strong_rand_bytes(32))
+  File.write!(path, secret)
+end
+secret = File.read!(path)
+
+config :learning_goals, LearningGoalsWeb.Endpoint,
+  secret_key_base: secret
