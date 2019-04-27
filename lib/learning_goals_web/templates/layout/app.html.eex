@@ -24,7 +24,7 @@
               <a class="dropdown-item" href="/papers">Initial Encounter</a>
               <a class="dropdown-item" href="#">Researched Argument</a>
               <a class="dropdown-item" href="#">Public Audience</a>
-              <a class="dropdown-item" href="#">Professional Audience</a>
+              <a class="dropdown-item" href="/papers4">Professional Audience</a>
             </div>
           </li>
         </ul>

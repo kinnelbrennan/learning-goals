@@ -1,7 +1,7 @@
-defmodule LearningGoalsWeb.Paper2Controller do
+defmodule LearningGoalsWeb.Paper4Controller do
   use LearningGoalsWeb, :controller
 
   def index(conn, _params) do
-    render(conn, "unit1.html")
+    render(conn, "index.html")
   end
 end
