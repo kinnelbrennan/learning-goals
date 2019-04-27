@@ -24,4 +24,4 @@ mix release
 
 echo "Starting app..."
 
-_build/prod/rel/learning_goals/bin/learning_goals foreground
+_build/prod/rel/learning-goals/bin/learning-goals foreground
