@@ -23,7 +23,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/papers">Initial Encounter</a>
               <a class="dropdown-item" href="/papers2">Researched Argument</a>
-              <a class="dropdown-item" href="#">Public Audience</a>
+              <a class="dropdown-item" href="/papers3">Public Audience</a>
               <a class="dropdown-item" href="/papers4">Professional Audience</a>
             </div>
           </li>
