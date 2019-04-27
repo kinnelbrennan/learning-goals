@@ -30,7 +30,7 @@
         </ul>
       </div>
     </nav>
-    <main role="main" class="container">x
+    <main role="main" class="container">
       <%= render @view_module, @view_template, assigns %>
     </main>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
